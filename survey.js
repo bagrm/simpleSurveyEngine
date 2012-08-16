@@ -3,6 +3,7 @@
 // Parses survey questions encoded in the url to survey.html and dynamically generates a survey
 // Written by: Brian Garfinkel
 
+// Globals
 var s;
 var next;
 var prev;
@@ -128,7 +129,6 @@ CheckBox.prototype.display = function() {
 	str += "<button type=\"button\" onclick=\"javascript:prev.call(s)\">Previous Question</button>";
     }
     
-    this.answer.length = 0;;
     document.write(str);
 };
 
