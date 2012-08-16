@@ -277,6 +277,7 @@ Survey.prototype.displayAnswers = function() {
 	    str += this.questions[i].answer + "</p>";
 	}
     }
+    str += "<br><br><button type=\"button\" onclick=\"window.location.href=\'index.html\'\">Create Another Survey</button><button type=\"button\" onclick=\"window.location.reload()\">Take Survey Again</button>"
     document.write(str);
 };
 
